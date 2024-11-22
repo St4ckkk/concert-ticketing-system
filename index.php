@@ -11,14 +11,13 @@ $all_concert = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <title>Concert Ticketing System</title>
-    <link rel="icon" type="image/x-icon" href="css/images/logos.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <div class="hero">
         <nav>
-            <img src="css/images/hands-up (2).png" class="logo" width=90px>
+            <div></div>
             <ul>
                 <li><a href="register.php"><i class="fas fa-user-plus"></i> SIGN UP</a></li>
                 <li><a href="login.php"><i class="fas fa-user"></i> LOGIN</a></li>

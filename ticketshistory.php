@@ -73,7 +73,6 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets History</title>
-    <link rel="icon" type="image/x-icon" href="css/images/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ticketshistory.css">
@@ -87,7 +86,7 @@ mysqli_close($conn);
                 alt="Small Responsive Image">
             <h1 class="display-4">Tickets History</h1>
             <p class="lead">View and manage ticket transactions.</p>
-            <p class="lead"> <b>By Musiverse</b> </p>
+            <p class="lead"> <b>By Concert Ticketing System</b> </p>
             <form method="POST" action="home.php">
                 <button type="submit" class="btn btn-danger form-check-inline mr-5 text-white">Back to Home</button>
             </form>
@@ -190,12 +189,11 @@ mysqli_close($conn);
         }
 
     }
-
     function generateAndOpenQRCode(transactionNo) {
-        const qrData = `Transaction No.: ${transactionNo}`;
-        const qrCodeUrl = `https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=${encodeURIComponent(qrData)}`;
-        window.open(qrCodeUrl, '_blank');
-    }
+    const qrData = `Transaction No.: ${transactionNo}`;
+    const qrCodeUrl = `https://quickchart.io/qr?text=${encodeURIComponent(qrData)}&size=300`;
+    window.open(qrCodeUrl, '_blank');
+}
     </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="icon" type="image/x-icon" href="css/images/logo.png">
+
     <link rel="stylesheet" href="css/profile.css">
 </head>
 
@@ -39,11 +39,12 @@ if (isset($_POST['submit'])) {
         <form action="" method="post" enctype="multipart/form-data">
             <h3 style="font-size:23px; color: #0D7377; word-spacing:3px; background-color:#333; border-radius: 5px; color: #30E3CA; box-shadow:0 10px 10px rgba(0,0,0,.1);"
                 class="headertext">
-                <i class="fas fa-music"></i> WELCOME TO SOUTH EAST ASIAN INSTITUTE OF TECHNOLOGY
+                <i class="fas fa-music"></i> WELCOME TO CONCERT TICKETING SYSTEM
             </h3>
             <a href="index.php" class="back-button"><i class="fas fa-arrow-left"></i> Back</a>
 
-            <img src="css/images/hands-up (2).png" style="width: 250px; " class="concertlogo">
+            <br>
+            <br>
             <h3 style="text-decoration:underline; text-decoration-thickness: 5px; text-decoration-color: #0D7377;">User
                 Login</h3>
             <?php
